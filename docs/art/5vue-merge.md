@@ -450,7 +450,7 @@ let v = new Vue({
 我们的 `data` 选项在经过 `mergeOptions` 处理之后将变成一个函数，且根据我们的分析，它应该就是 `mergedInstanceDataFn` 函数，我们可以在控制台打印如下信息：
 
 ```js
-console.log(v.$options)
+console.log(vm.$options)
 ```
 
 输出如下图：
@@ -1297,7 +1297,7 @@ watch: {
 我们可以通过打印实例的 `$options` 属性来确认这一点：
 
 ```js
-console.log(v.$options)
+console.log(vm.$options)
 ```
 
 如下图：
